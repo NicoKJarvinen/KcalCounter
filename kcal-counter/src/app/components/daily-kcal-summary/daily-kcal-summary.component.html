@@ -1,0 +1,17 @@
+<div>
+  <h2>Daily kcal summary</h2>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Total Kcal Eaten</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of dailySummaries">
+        <td>{{ entry.date }}</td>
+        <td>{{ entry.totalKcal }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

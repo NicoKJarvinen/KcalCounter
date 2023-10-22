@@ -1,0 +1,19 @@
+<div>
+  <h2>Monthly kcal summary</h2>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Year</th>
+        <th>Avg Kcal Eaten/Day</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of monthlySummaries">
+        <td>{{ entry.month }}</td>
+        <td>{{ entry.year }}</td>
+        <td>{{ entry.avgKcalPerDay }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
